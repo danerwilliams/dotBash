@@ -1,0 +1,2 @@
+# dotBash
+my .bashrc profile
