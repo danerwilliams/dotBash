@@ -82,6 +82,8 @@ if [ "$color_prompt" = yes ]; then
 
   if [[ ! $git_status =~ "working directory clean" ]]; then
     echo -e $COLOR_RED
+  elif [[ ! $git_status =~ "working tree clean" ]]; then
+    echo -e $COLOR_RED
   elif [[ $git_status =~ "Your branch is ahead of" ]]; then
     echo -e $COLOR_YELLOW
   elif [[ $git_status =~ "nothing to commit" ]]; then
