@@ -75,7 +75,7 @@ if [ "$color_prompt" = yes ]; then
 	COLOR_RED='\033[01;31m'
 	COLOR_YELLOW='\033[01;33m'
 	COLOR_GREEN='\033[01;32m'
-	COLOR_OCHRE='\033[38;5;95m'
+	COLOR_CYAN='\033[01;36m'
 
 	function git_color {
   local git_status="$(git status 2> /dev/null)"
@@ -87,11 +87,11 @@ if [ "$color_prompt" = yes ]; then
   elif [[ $git_status =~ "nothing to commit" ]]; then
     echo -e $COLOR_GREEN
   else
-    echo -e $COLOR_OCHRE
+    echo -e $COLOR_CYAN
   fi
 }
 
-PS1=$'\[\033[01;32m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w$(git_color)$(parse_git_branch) \[\033[00m\]'
+PS1=$'\[\033[01;36m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w$(git_color)$(parse_git_branch) \[\033[00m\]'
 #	PS1=$'\[\033[01;32m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w\[\033[01;36m\]$(parse_git_branch) \[\033[00m\]'
 #PS1=$'\[\033[01;32m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w \[\033[01;36m\]($(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \[\033[00m\]'
 else
