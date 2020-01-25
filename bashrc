@@ -2,6 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 #this is a test
+#this is another test
 
 #add warning to remove function
 alias rm='rm -i'
