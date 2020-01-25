@@ -1,7 +1,9 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-#this is a test
+#these are tests
+#dis a test
+
 
 #add warning to remove function
 alias rm='rm -i'
