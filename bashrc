@@ -153,5 +153,6 @@ fi
 umask 0077
 
 #makes ls directory colors blue
-LS_COLORS=$LS_COLORS:'di=1;36' ; export LS_COLORS
+LS_COLORS=$LS_COLORS:'di=1;34' ; export LS_COLORS
 LS_COLORS=$LS_COLORS:'ex=0;31' ; export LS_COLORS
+LS_COLORS=$LS_COLORS:'ln=0;36' ; export LS_COLORS
