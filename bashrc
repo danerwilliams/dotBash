@@ -92,7 +92,8 @@ if [ "$color_prompt" = yes ]; then
   fi
 }
 
-PS1=$'\[\033[01;36m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\[\033[00m\] '
+PS1=$'\[\033[01;36m\]→  \[\033[01;35m\]\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\[\033[00m\] '
+#\u2192 = →
 #\[\033[00m\] '
 #	PS1=$'\[\033[01;32m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w\[\033[01;36m\]$(parse_git_branch) \[\033[00m\]'
 #PS1=$'\[\033[01;32m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w \[\033[01;36m\]($(git branch 2>/dev/null | grep '^*' | colrm 1 2)) \[\033[00m\]'
@@ -152,7 +153,7 @@ fi
 
 umask 0077
 
-#makes ls directory colors blue
+#makes ls directory colors blue, executables red, symlinks cyan
 LS_COLORS=$LS_COLORS:'di=1;34' ; export LS_COLORS
 LS_COLORS=$LS_COLORS:'ex=0;31' ; export LS_COLORS
 LS_COLORS=$LS_COLORS:'ln=0;36' ; export LS_COLORS
