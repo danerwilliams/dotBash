@@ -3,6 +3,12 @@
 # for examples
 #test
 
+#cronjob weather at login for systems extra point
+#if [[ $- == *i* ]]
+#then
+#	cat ~/.weather
+#fi
+
 #add warning to remove function
 alias rm='rm -i'
 
