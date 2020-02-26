@@ -9,7 +9,7 @@ alias rm='rm -i'
 #set vim as default editor
 export EDITOR="/usr/bin/vim"
 
-#enable python3
+#enable python3 on student machines
 export PATH=/escnfs/home/pbui/pub/pkgsrc/bin:$PATH
 
 # If not running interactively, don't do anything
