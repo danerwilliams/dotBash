@@ -3,11 +3,11 @@
 # for examples
 #test
 
-#cronjob weather at login for systems extra point
-#if [[ $- == *i* ]]
-#then
-#	cat ~/.weather
-#fi
+#tell you holidays at login :)
+if [[ $- == *i* ]]
+then
+	~/.scripts/holidays.sh
+fi
 
 #add warning to remove function
 alias rm='rm -i'
