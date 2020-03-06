@@ -6,7 +6,7 @@
 #tell you holidays at login :)
 if [[ $- == *i* ]]
 then
-	~/.scripts/holidays.sh
+	~/.scripts/holidays.sh 2> /dev/null
 fi
 
 #add warning to remove function
