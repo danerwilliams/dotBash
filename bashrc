@@ -98,16 +98,23 @@ if [ "$color_prompt" = yes ]; then
   fi
 }
 
-command_arrow(){
-	if [ "$?" -eq "0" ]
+PROMPT_COMMAND="__prompt_command; ${PROMPT_COMMAND}"
+
+__prompt_command(){
+	local exit="$?"
+	PS1=''
+
+	if [ "$exit" -eq "0" ]
 	then
-		echo -e $COLOR_CYAN
+		PS1=$'\n\[\033[01;35m\]\u@\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\n\['$COLOR_CYAN'\]❯\[\033[00m\] '
+
 	else
-		echo -e $COLOR_RED
+		PS1=$'\n\[\033[01;35m\]\u@\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\n\['$COLOR_RED'\]❯\[\033[00m\] '
+
 	fi
 }
 
-PS1=$'\n\[\033[01;35m\]\u@\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\n\[\$(command_arrow)\]❯\[\033[00m\] '
+
 #\u2192 = →
 #\[\033[00m\] '
 #	PS1=$'\[\033[01;32m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w\[\033[01;36m\]$(parse_git_branch) \[\033[00m\]'
