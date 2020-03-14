@@ -98,7 +98,16 @@ if [ "$color_prompt" = yes ]; then
   fi
 }
 
-PS1=$'\n\[\033[01;35m\]\u@\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\n\[\033[01;36m\]❯\[\033[00m\] '
+command_arrow(){
+	if [ "$?" -eq "0" ]
+	then
+		echo -e $COLOR_CYAN
+	else
+		echo -e $COLOR_RED
+	fi
+}
+
+PS1=$'\n\[\033[01;35m\]\u@\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\n\[\$(command_arrow)\]❯\[\033[00m\] '
 #\u2192 = →
 #\[\033[00m\] '
 #	PS1=$'\[\033[01;32m\]\u2192  \[\033[01;35m\]\h \[\033[01;34m\]\w\[\033[01;36m\]$(parse_git_branch) \[\033[00m\]'
