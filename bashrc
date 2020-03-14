@@ -104,7 +104,7 @@ __prompt_command(){
 	local exit="$?"
 	PS1=''
 
-	if [ "$exit" -eq "0" ]
+	if [ "$exit" -eq 0 ]
 	then
 		PS1=$'\n\[\033[01;35m\]\u@\h \[\033[01;34m\]\w\[$(git_color)\]$(parse_git_branch)\n\['$COLOR_CYAN'\]❯\[\033[00m\] '
 
