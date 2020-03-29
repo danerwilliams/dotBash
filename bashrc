@@ -18,6 +18,13 @@ case $- in
       *) return;;
 esac
 
+#tell you holidays at login :)
+if [[ $- == *i* ]]
+then
+	~/.scripts/holidays.sh 2> /dev/null
+fi
+
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
