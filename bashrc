@@ -99,6 +99,9 @@ if [ "$color_prompt" = yes ]; then
   fi
 }
 
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+##### WHAT YOU WANT TO DISABLE FOR WARP - BELOW
+
 PROMPT_COMMAND="__prompt_command; ${PROMPT_COMMAND}"
 
 __prompt_command(){
@@ -114,6 +117,9 @@ __prompt_command(){
 
 	fi
 }
+
+##### WHAT YOU WANT TO DISABLE FOR WARP - ABOVE
+fi
 
 
 #\u2192 = →
@@ -180,3 +186,5 @@ umask 0077
 LS_COLORS=$LS_COLORS:'di=1;34' ; export LS_COLORS
 LS_COLORS=$LS_COLORS:'ex=0;31' ; export LS_COLORS
 LS_COLORS=$LS_COLORS:'ln=0;36' ; export LS_COLORS
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
