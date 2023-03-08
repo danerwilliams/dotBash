@@ -12,9 +12,3 @@ export NVM_DIR="$HOME/.nvm"
 
 #load .bashrc
 [ -r ~/.bashrc ] && source ~/.bashrc
-
-export PATH=/opt/homebrew/bin:$PATH
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-export PATH=/usr/local/mysql/bin:$PATH
