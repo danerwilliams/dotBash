@@ -14,7 +14,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -r ~/.bashrc ] && source ~/.bashrc
 
 export PATH=/opt/homebrew/bin:$PATH
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 
-export PATH=/usr/local/mysql/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
