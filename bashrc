@@ -1,6 +1,6 @@
 # QOL aliases
 alias gts='gt sync; git submodule update --recursive;'
-alias rm='rm -i'
+alias yolo='claude --dangerously-skip-permissions'
 
 export EDITOR="/usr/bin/vim"
 
@@ -27,7 +27,7 @@ if [ "$color_prompt" = yes ]; then
 	parse_git_branch() {
 	     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 	}
-	
+
 	COLOR_RED='\033[01;31m'
 	COLOR_YELLOW='\033[01;33m'
 	COLOR_GREEN='\033[01;32m'
