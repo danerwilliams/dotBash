@@ -1,3 +1,5 @@
+[ -d "$HOME/.scripts" ] && export PATH="$HOME/.scripts:$PATH"
+
 # QOL aliases
 alias gts='gt sync; git submodule update --recursive;'
 alias yolo='claude --dangerously-skip-permissions'
