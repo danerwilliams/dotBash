@@ -1,0 +1,22 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "8b23f77c3d1843edd7fe7e4b190b679aac35661e",
+  "prompts": {
+    "6b9c235fdf1f411f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d6566da7-80ce-4926-8011-2817f37d9ca3",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Dane Williams",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 5,
+      "accepted_lines": 0,
+      "overriden_lines": 0,
+      "messages_url": "https://usegitai.com/cas/2aa43e5ff52ec3f3490a4cd9de28a41d77982169bd218bb71198a87ed4a3f89d"
+    }
+  }
+}
