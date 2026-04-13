@@ -115,3 +115,11 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Added by git-ai installer on Tue Mar 10 20:12:29 EDT 2026
+export PATH="/Users/dane/.git-ai/bin:$PATH"
+
+
+# clay-base turbo remote cache v2
+export TURBO_CACHE=local:rw,remote:r
+export TURBO_TEAM=clay
+export TURBO_TOKEN=unused
