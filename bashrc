@@ -4,6 +4,7 @@
 # QOL aliases
 alias gts='gt sync; git submodule update --recursive;'
 alias yolo='claude --dangerously-skip-permissions'
+alias yoloc='codex --yolo'
 
 export EDITOR="/usr/bin/vim"
 
