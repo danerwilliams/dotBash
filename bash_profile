@@ -3,7 +3,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export LSCOLORS=ExgxBxDxbxegedabagacad
 
 #homebrew
-export PATH=/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:/usr/local/sbin:$PATH
 
 #nvm
 export NVM_DIR="$HOME/.nvm"
@@ -12,12 +12,3 @@ export NVM_DIR="$HOME/.nvm"
 
 #load .bashrc
 [ -r ~/.bashrc ] && source ~/.bashrc
-
-export PATH=/opt/homebrew/bin:$PATH
-
-if [ -d "$HOME/.pyenv" ]; then
-    export PYENV_ROOT="$HOME/.pyenv"
-    export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init --path)"
-    eval "$(pyenv init -)"
-fi
