@@ -1,0 +1,19 @@
+bashrc
+  s_f157a88d32e9b2::t_3a7734d450c304 131-136
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "b1e33270a0098d6b8a367fbcb34a9ad889ac66c8",
+  "prompts": {},
+  "sessions": {
+    "s_f157a88d32e9b2": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "efa55fab-a64f-4979-8f51-a11e9af2c673",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Dane Williams <danerwilliams@Danes-MacBook-Pro.local>"
+    }
+  }
+}
