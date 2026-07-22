@@ -128,3 +128,9 @@ export PATH="/Users/dane/.git-ai/bin:$PATH"
 export TURBO_CACHE=local:rw,remote:r
 export TURBO_TEAM=clay
 export TURBO_TOKEN=unused
+
+# Added by git-ai installer on Wed Jul 22 12:58:17 EDT 2026
+export PATH="/Users/danerwilliams/.git-ai/bin:$PATH"
+
+# Open the Cursor agent CLI with permissions skipped (Run Everything)
+alias yolog='cursor-agent --yolo'
