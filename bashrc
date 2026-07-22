@@ -1,6 +1,9 @@
 [ -d "$HOME/.local/bin" ] && export PATH="$HOME/.local/bin:$PATH"
 [ -d "$HOME/.scripts" ] && export PATH="$HOME/.scripts:$PATH"
 
+# Local secrets (not tracked) — shared across shells and MCP-launching tools
+[ -r "$HOME/.secrets/env.sh" ] && source "$HOME/.secrets/env.sh"
+
 # QOL aliases
 alias gts='gt sync; git submodule update --recursive;'
 alias yolo='claude --dangerously-skip-permissions'
