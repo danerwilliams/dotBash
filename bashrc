@@ -8,6 +8,7 @@
 alias gts='gt sync; git submodule update --recursive;'
 alias yolo='claude --dangerously-skip-permissions'
 alias yoloc='codex --yolo'
+alias yolod='devin --permission-mode dangerous'
 
 export EDITOR="/usr/bin/vim"
 
