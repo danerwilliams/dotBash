@@ -6,9 +6,9 @@
 
 # QOL aliases
 alias gts='gt sync; git submodule update --recursive;'
-alias yolo='claude --dangerously-skip-permissions'
-alias yoloc='codex --yolo'
-alias yolod='devin --permission-mode dangerous'
+alias yolo='claude --permission-mode auto'
+alias yoloc='codex --approve-for-me'
+alias yolod='devin --permission-mode smart'
 
 export EDITOR="/usr/bin/vim"
 
@@ -133,5 +133,5 @@ export TURBO_TOKEN=unused
 # Added by git-ai installer on Wed Jul 22 12:58:17 EDT 2026
 export PATH="/Users/danerwilliams/.git-ai/bin:$PATH"
 
-# Open the Cursor agent CLI with permissions skipped (Run Everything)
-alias yolog='cursor-agent --yolo'
+# Open the Cursor agent CLI with automatic safety review
+alias yolog='cursor-agent --auto-review'
